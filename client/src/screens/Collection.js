@@ -44,8 +44,8 @@ class CollectionPage extends React.Component{
   render() {
     return(
         <div style={Styles.bgColor}>
-          <a style={Styles.arial} href="http://localhost:3000/home">Home  </a>
-          <a style={Styles.arial} href="http://localhost:3000/collection">Collection</a>
+          <a style={Styles.arial} href="https://tappedmtg.herokuapp.com//home">Home  </a>
+          <a style={Styles.arial} href="https://tappedmtg.herokuapp.com/collection">Collection</a>
           <ul>
             {this.state.myCards}
           </ul>

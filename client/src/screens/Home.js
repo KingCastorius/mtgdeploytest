@@ -57,8 +57,8 @@ class HomePage extends React.Component{
         <Grid>
           <Row>
             <Cell is="desktop-12" style={Styles.arial}>
-              <a href="http://localhost:3000/home">Home  </a>
-              <a href="http://localhost:3000/collection">Collection</a>
+              <a href="https://tappedmtg.herokuapp.com/home">Home  </a>
+              <a href="https://tappedmtg.herokuapp.com/collection">Collection</a>
               <h1 style={Styles.listColor}>Tapped</h1>
               <p>A Magic: the Gathering Collection Gallery</p>
               <h1>

@@ -20,7 +20,7 @@ class LoginPage extends React.Component {
     e.preventDefault();
     axios.post('/users/login', this.state).then((results) => {
       localStorage.setItem('token', results.data.token)
-      window.location.replace("http://localhost:3000/home");
+      window.location.replace("https://tappedmtg.herokuapp.com//home");
     })
 
   }
