@@ -1,11 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import LoginPage from './screens/Login'
+import HomePage from './screens/Home'
 
 const Index = ({pathname}) => {
 	switch(pathname) {
 		case "/":
 			return <LoginPage />
+        case "/home":
+			return <HomePage />
         default:
 			return <LoginPage />
 	}
