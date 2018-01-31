@@ -6,7 +6,7 @@ const Index = ({pathname}) => {
 	switch(pathname) {
 		case "/":
 			return <LoginPage />
-            default:
+        default:
 			return <LoginPage />
 	}
 }
