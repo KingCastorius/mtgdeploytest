@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import LoginPage from './screens/Login'
 import HomePage from './screens/Home'
 import CollectionPage from './screens/Collection'
+import RegisterPage from './screens/Register'
 
 const Index = ({pathname}) => {
 	switch(pathname) {
