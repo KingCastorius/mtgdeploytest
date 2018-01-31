@@ -12,6 +12,8 @@ const Index = ({pathname}) => {
 			return <HomePage />
         case "/collection":
             return <CollectionPage />
+        case "/register":
+            return <RegisterPage />
         default:
 			return <LoginPage />
 	}
