@@ -20,7 +20,7 @@ class LoginPage extends React.Component {
     e.preventDefault();
     axios.post('/users/login', this.state).then((results) => {
       localStorage.setItem('token', results.data.token)
-      window.location.replace("https://tappedmtg.herokuapp.com//home");
+      window.location.replace("https://tappedmtg.herokuapp.com/home");
     })
 
   }
@@ -60,7 +60,7 @@ class LoginPage extends React.Component {
             </Row>
             <Row>
               <Col style={Styles.arial}>
-                <p>Haven't registered? Click <a href="http://localhost:3000/register">here</a></p>
+                <p>Haven't registered? Click <a href="https://tappedmtg.herokuapp.com/register">here</a></p>
               </Col>
             </Row>
           </Container>
