@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import LoginPage from './screens/Login'
 import HomePage from './screens/Home'
+import CollectionPage from './screens/Collection'
 
 const Index = ({pathname}) => {
 	switch(pathname) {
@@ -9,6 +10,8 @@ const Index = ({pathname}) => {
 			return <LoginPage />
         case "/home":
 			return <HomePage />
+        case "/collection":
+            return <CollectionPage />
         default:
 			return <LoginPage />
 	}
