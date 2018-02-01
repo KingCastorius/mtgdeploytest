@@ -27,16 +27,21 @@ class CollectionPage extends React.Component{
     const authToken = localStorage.getItem('token');
     const payload = (authToken) ? JSON.parse(window.atob(authToken.split('.')[1])) : null;
     axios.get(`/cards/${payload.id}`).then((res) => {
-      let myCards = res.data.map(card =>
-        <div key={key++} style={Styles.arial}>
-          <h4>{card.name}</h4>
-          <img src={card.imageUrl} />
-          <div>
-            <Button onClick={(e) => this.deleteCard(e, card._id)} color="danger">Remove from Collection</Button>
+      console.log(res)
+      if(res !== null){
+        let myCards = res.data.map(card =>
+          <div key={key++} style={Styles.arial}>
+            <h4>{card.name}</h4>
+            <img src={card.imageUrl} />
+            <div>
+              <Button onClick={(e) => this.deleteCard(e, card._id)} color="danger">Remove from Collection</Button>
+            </div>
           </div>
-        </div>
-      );
-      this.setState({myCards: myCards});
+        );
+        this.setState({myCards: myCards});
+      }
+      
+      
     })
   }
   

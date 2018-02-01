@@ -18,12 +18,8 @@ router.post('/', (req, res) => {
 })
 
 router.get('/:id',(req, res) => {
-  Card.find({user_id: req.params['id']}, ((err, cards) => {
-    if(err) {
-      res.send(err)
-    } else {
-      res.json(cards)
-    }
+  Card.find({user_id: req.params.id}, ((cards) => {
+    res.json(cards)
   }))
 })
 
