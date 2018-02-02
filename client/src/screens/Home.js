@@ -26,7 +26,7 @@ class HomePage extends React.Component{
 
   setValue(e) {
   this.setState({[e.target.name]: e.target.value})
-}
+  }
 
   getCards(e) {
     e.preventDefault();
@@ -87,7 +87,6 @@ class HomePage extends React.Component{
                   name="cardInfo"
                   type="text"
                   placeholder="search..."
-                  value={this.state.cardInfo}
                   onChange={(e) => this.setValue(e)}
                 />
                 <div>
