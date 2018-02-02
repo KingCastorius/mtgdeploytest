@@ -17,10 +17,10 @@ router.post('/', (req, res) => {
   })
 })
 
-router.get('/:id',(req, res) => {
-  Card.find({user_id: req.params.id}, ((cards) => {
-    res.json(cards)
-  }))
+router.get('/:id', (req, res) => {
+  Card.find({user_id: req.params['id']}).then((cards) => {
+    res.json(cards)    
+  })
 })
 
 router.delete('/:id',(req, res) => {
